@@ -1,8 +1,8 @@
 import alpaca_trade_api as tradeapi
 import datetime
 
-ALPACA_API_KEY = "REPLACE_ME"
-ALPACA_SECRET_KEY = "REPLACE_ME"
+ALPACA_API_KEY = 'PKQRILIBLBWD01BF9J9D'
+ALPACA_SECRET_KEY = 'agCCYPLi4adBowy9NOFR36f6RcsSEeafYQF2lVYq'
 USE_POLYGON = False
 
 
@@ -26,7 +26,10 @@ class MartingaleTrader(object):
         self.data_url = 'https://data.alpaca.markets'
 
         # The symbol we will be trading
-        self.symbol = 'SPY'
+        self.symbol = 'XEL'
+#        self.symbol = 'ES'
+#        self.symbol = 'WEC'
+#        self.symbol = 'DTE'
 
         # How many seconds we will wait in between updating the streak values
         self.tick_size = 5

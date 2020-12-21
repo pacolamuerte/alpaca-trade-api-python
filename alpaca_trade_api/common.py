@@ -70,15 +70,15 @@ def get_credentials(key_id: str = None,
                     oauth: str = None) -> Credentials:
     oauth = oauth or os.environ.get('APCA_API_OAUTH_TOKEN')
 
-    key_id = key_id or os.environ.get('APCA_API_KEY_ID')
+    key_id = key_id or os.environ.get('AKEF5FD4UTNS4WMHTNKF')
     if key_id is None and oauth is None:
         raise ValueError('Key ID must be given to access Alpaca trade API',
-                         ' (env: APCA_API_KEY_ID)')
+                         ' (env: AKEF5FD4UTNS4WMHTNKF)')
 
-    secret_key = secret_key or os.environ.get('APCA_API_SECRET_KEY')
+    secret_key = secret_key or os.environ.get('M6uDPbF8WyWULQVZ0uRoSwgq5euMPh8U5RSRDbQ6')
     if secret_key is None and oauth is None:
         raise ValueError('Secret key must be given to access Alpaca trade API'
-                         ' (env: APCA_API_SECRET_KEY')
+                         ' (env: M6uDPbF8WyWULQVZ0uRoSwgq5euMPh8U5RSRDbQ6')
 
     return key_id, secret_key, oauth
 
